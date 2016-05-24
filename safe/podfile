@@ -1,6 +1,0 @@
-platform :ios, '7.0'
-pod 'AFNetworking', '~> 2.6.0'
-pod 'AMapNavi' #导航SDK
-pod 'EaseMobSDKFull', :git => 'https://github.com/easemob/sdk-ios-cocoapods-integration.git'
-pod 'AMapSearch'
-pod 'SDWebImage', '~> 3.7.3'
