@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jkH-ad-98h" userLabel="others" customClass="tableHead">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="255"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1oe-Cm-TzP">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="235"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeadImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fcX-pG-ojC">
+                    <rect key="frame" x="532" y="185" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="E7L-lG-Se4"/>
+                        <constraint firstAttribute="width" constant="60" id="TXm-VA-zcn"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="薛永伟" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eF2-tF-B9G">
+                    <rect key="frame" x="440" y="193" width="84" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="84" id="oAv-iy-exQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1oe-Cm-TzP" secondAttribute="trailing" id="2o9-eO-JFA"/>
+                <constraint firstItem="1oe-Cm-TzP" firstAttribute="top" secondItem="jkH-ad-98h" secondAttribute="top" id="3q4-Vp-VuJ"/>
+                <constraint firstItem="fcX-pG-ojC" firstAttribute="trailing" secondItem="jkH-ad-98h" secondAttribute="trailingMargin" id="5ZN-86-DCp"/>
+                <constraint firstItem="1oe-Cm-TzP" firstAttribute="leading" secondItem="jkH-ad-98h" secondAttribute="leading" id="T33-gp-tLG"/>
+                <constraint firstAttribute="bottom" secondItem="1oe-Cm-TzP" secondAttribute="bottom" constant="20" id="b14-IS-Fwz"/>
+                <constraint firstAttribute="bottom" secondItem="fcX-pG-ojC" secondAttribute="bottom" constant="10" id="oLV-0K-YlY"/>
+                <constraint firstItem="fcX-pG-ojC" firstAttribute="leading" secondItem="eF2-tF-B9G" secondAttribute="trailing" constant="8" symbolic="YES" id="xge-uC-cZo"/>
+                <constraint firstAttribute="bottom" secondItem="eF2-tF-B9G" secondAttribute="bottom" constant="41" id="yFD-53-pUf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="981" y="8.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HeadImage.jpg" width="166" height="166"/>
+    </resources>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="albumComentsCellID" id="KGk-i7-Jjw" customClass="albumComentsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xiangcelanpl.png" translatesAutoresizingMaskIntoConstraints="NO" id="TvJ-nF-M0s">
+                        <rect key="frame" x="13" y="17" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="ntn-vH-BUG"/>
+                            <constraint firstAttribute="height" constant="10" id="sXG-eq-a6e"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三李四" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qff-tu-MWg">
+                        <rect key="frame" x="79" y="8" width="120" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="HXi-z5-7Kc"/>
+                            <constraint firstAttribute="width" constant="120" id="mTZ-XO-fc2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.17599057300000001" green="0.4168155073" blue="0.68053582700000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="呵呵嗒" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eu0-Yn-hlC">
+                        <rect key="frame" x="79" y="25" width="233" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="NjV-QL-xlq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-12-31 12:34:59" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QQ-f2-SNv">
+                        <rect key="frame" x="192" y="8" width="120" height="8"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="Koc-pf-tww"/>
+                            <constraint firstAttribute="height" constant="8" id="c8T-MC-qKi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBP-p2-eCG">
+                        <rect key="frame" x="31" y="10" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Zll-Um-Bwv"/>
+                            <constraint firstAttribute="width" constant="30" id="rI3-f7-RdO"/>
+                        </constraints>
+                        <state key="normal" image="1.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6QQ-f2-SNv" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="0f0-LB-PI8"/>
+                    <constraint firstItem="6QQ-f2-SNv" firstAttribute="top" secondItem="Qff-tu-MWg" secondAttribute="top" id="CrI-Rb-hKK"/>
+                    <constraint firstItem="TvJ-nF-M0s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="FPx-Om-nUj"/>
+                    <constraint firstAttribute="centerY" secondItem="SBP-p2-eCG" secondAttribute="centerY" id="L5d-PJ-60D"/>
+                    <constraint firstItem="Eu0-Yn-hlC" firstAttribute="top" secondItem="Qff-tu-MWg" secondAttribute="bottom" constant="5" id="Ta6-t0-4bS"/>
+                    <constraint firstItem="Eu0-Yn-hlC" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="dZZ-Be-yBI"/>
+                    <constraint firstItem="SBP-p2-eCG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="23" id="jEz-h1-ole"/>
+                    <constraint firstItem="Qff-tu-MWg" firstAttribute="top" secondItem="SBP-p2-eCG" secondAttribute="top" constant="-2" id="jb0-XP-4ur"/>
+                    <constraint firstItem="SBP-p2-eCG" firstAttribute="top" secondItem="TvJ-nF-M0s" secondAttribute="top" constant="-7" id="ltW-ce-oNg"/>
+                    <constraint firstItem="Qff-tu-MWg" firstAttribute="leading" secondItem="SBP-p2-eCG" secondAttribute="trailing" constant="18" id="oeR-xk-cxl"/>
+                    <constraint firstItem="Eu0-Yn-hlC" firstAttribute="leading" secondItem="Qff-tu-MWg" secondAttribute="leading" id="zax-on-Fhv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="comContentLabel" destination="Eu0-Yn-hlC" id="ape-kb-zin"/>
+                <outlet property="comHeadImageView" destination="SBP-p2-eCG" id="PRk-kr-3mK"/>
+                <outlet property="comImageView" destination="TvJ-nF-M0s" id="kDH-6d-VtR"/>
+                <outlet property="comNameLabel" destination="Qff-tu-MWg" id="HCA-Tz-K2d"/>
+                <outlet property="comTimeLabel" destination="6QQ-f2-SNv" id="tA9-Ms-UT5"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1.png" width="142" height="142"/>
+        <image name="xiangcelanpl.png" width="16" height="16"/>
+    </resources>
+</document>

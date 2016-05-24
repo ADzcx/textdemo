@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlistListViewController">
+            <connections>
+                <outlet property="plistTextFielld" destination="2rL-xd-xh0" id="LaJ-dX-V2k"/>
+                <outlet property="tableView" destination="owe-Bv-RjZ" id="hnQ-kB-yrN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入要去的地址" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2rL-xd-xh0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="QPM-BY-qB6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="owe-Bv-RjZ">
+                    <rect key="frame" x="0.0" y="31" width="375" height="636"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2rL-xd-xh0" secondAttribute="trailing" id="5qz-zZ-Wyz"/>
+                <constraint firstItem="owe-Bv-RjZ" firstAttribute="top" secondItem="2rL-xd-xh0" secondAttribute="bottom" constant="1" id="6bg-MO-iGP"/>
+                <constraint firstItem="2rL-xd-xh0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AXZ-Bs-YoA"/>
+                <constraint firstAttribute="bottom" secondItem="owe-Bv-RjZ" secondAttribute="bottom" id="QK7-lq-rhl"/>
+                <constraint firstItem="owe-Bv-RjZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aCp-9G-YvX"/>
+                <constraint firstAttribute="trailing" secondItem="owe-Bv-RjZ" secondAttribute="trailing" id="rlz-oO-piy"/>
+                <constraint firstItem="2rL-xd-xh0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uU7-JJ-M81"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="343.5" y="241.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SIW-qA-y3H">
+                    <rect key="frame" x="-18" y="0.0" width="516" height="480"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SIW-qA-y3H" secondAttribute="trailing" constant="-18" id="FjG-w5-3DV"/>
+                <constraint firstItem="SIW-qA-y3H" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-18" id="QSo-64-Bxd"/>
+                <constraint firstItem="SIW-qA-y3H" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SFt-T6-leH"/>
+                <constraint firstAttribute="bottom" secondItem="SIW-qA-y3H" secondAttribute="bottom" id="nMs-pt-1FG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="470" y="349"/>
+        </view>
+    </objects>
+</document>

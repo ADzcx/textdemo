@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ThreePhotoiew">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nCO-AA-S7g">
+                    <rect key="frame" x="41" y="0.0" width="39" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="4Yy-lH-QqD"/>
+                        <constraint firstAttribute="width" constant="39" id="Gb1-0h-u8P"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NFk-IQ-6g3">
+                    <rect key="frame" x="41" y="41" width="39" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="Mu1-Fk-Rkl"/>
+                        <constraint firstAttribute="width" constant="39" id="UiU-lJ-lSu"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TA4-fg-RVC">
+                    <rect key="frame" x="0.0" y="0.0" width="39" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="39" id="ZPo-ec-Oth"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TA4-fg-RVC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4Qf-Q8-E2z"/>
+                <constraint firstItem="nCO-AA-S7g" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DgM-jU-aQH"/>
+                <constraint firstItem="TA4-fg-RVC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IfX-KJ-0KE"/>
+                <constraint firstAttribute="trailing" secondItem="NFk-IQ-6g3" secondAttribute="trailing" id="Mcp-U5-ehY"/>
+                <constraint firstAttribute="bottom" secondItem="TA4-fg-RVC" secondAttribute="bottom" id="Y33-kv-BdH"/>
+                <constraint firstAttribute="trailing" secondItem="nCO-AA-S7g" secondAttribute="trailing" id="Zh5-Ys-xwS"/>
+                <constraint firstAttribute="bottom" secondItem="NFk-IQ-6g3" secondAttribute="bottom" id="rt0-Ik-8NS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="view1" destination="TA4-fg-RVC" id="bFk-ZC-BkC"/>
+                <outlet property="view2" destination="nCO-AA-S7g" id="Zes-qb-Q72"/>
+                <outlet property="view3" destination="NFk-IQ-6g3" id="jRf-4g-Rg8"/>
+            </connections>
+        </view>
+    </objects>
+</document>

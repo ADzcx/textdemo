@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZjZCTXView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="147"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="多长时间后再次提醒您?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="He1-tz-qR3">
+                    <rect key="frame" x="17" y="10" width="150" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="3de-HZ-Ogv"/>
+                        <constraint firstAttribute="height" constant="21" id="YIL-RX-SQV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30分钟" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Sh-20-hlS">
+                    <rect key="frame" x="167" y="10" width="100" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="KBC-VI-Wmc"/>
+                        <constraint firstAttribute="width" constant="100" id="ZHA-wd-Ald"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="0.63212213989999999" blue="0.18258415959999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.0" maxValue="720" translatesAutoresizingMaskIntoConstraints="NO" id="UVH-ad-Pvk">
+                    <rect key="frame" x="28" y="51" width="544" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2OQ-n6-rMS"/>
+                    </constraints>
+                    <color key="minimumTrackTintColor" red="1" green="0.63212213989999999" blue="0.18258415959999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="timeSlider:" destination="iN0-l3-epB" eventType="valueChanged" id="MzP-FF-lBf"/>
+                    </connections>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEM-tE-izf">
+                    <rect key="frame" x="30" y="96" width="239" height="36"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="fZg-ki-oCJ"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onQUxiaoClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="FCm-b3-ywO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y49-YK-bPq">
+                    <rect key="frame" x="331" y="96" width="239" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.63212213989999999" blue="0.18258415959999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="KHC-bg-TKb"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nG-qs-FfU">
+                    <rect key="frame" x="299" y="80" width="2" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="4ZF-vo-Z8j"/>
+                        <constraint firstAttribute="width" constant="2" id="n8m-g8-xe0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JEM-tE-izf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="23n-n6-0yj"/>
+                <constraint firstItem="8Sh-20-hlS" firstAttribute="leading" secondItem="He1-tz-qR3" secondAttribute="trailing" id="4lH-0J-rrd"/>
+                <constraint firstItem="y49-YK-bPq" firstAttribute="leading" secondItem="7nG-qs-FfU" secondAttribute="trailing" constant="30" id="6hD-f8-fVY"/>
+                <constraint firstItem="8Sh-20-hlS" firstAttribute="centerY" secondItem="He1-tz-qR3" secondAttribute="centerY" id="Fsh-HH-SfE"/>
+                <constraint firstItem="He1-tz-qR3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="ShX-Ou-p4D"/>
+                <constraint firstAttribute="bottom" secondItem="y49-YK-bPq" secondAttribute="bottom" constant="15" id="TgI-jz-wHI"/>
+                <constraint firstAttribute="trailing" secondItem="y49-YK-bPq" secondAttribute="trailing" constant="30" id="Ucn-zh-dAa"/>
+                <constraint firstAttribute="bottom" secondItem="7nG-qs-FfU" secondAttribute="bottom" id="WT2-Ul-8st"/>
+                <constraint firstItem="UVH-ad-Pvk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="YJU-eD-0RQ"/>
+                <constraint firstItem="7nG-qs-FfU" firstAttribute="leading" secondItem="JEM-tE-izf" secondAttribute="trailing" constant="30" id="bem-rI-jP8"/>
+                <constraint firstAttribute="centerX" secondItem="7nG-qs-FfU" secondAttribute="centerX" id="cgf-U7-9Sx"/>
+                <constraint firstItem="UVH-ad-Pvk" firstAttribute="top" secondItem="He1-tz-qR3" secondAttribute="bottom" constant="20" id="gJK-3t-He8"/>
+                <constraint firstAttribute="bottom" secondItem="JEM-tE-izf" secondAttribute="bottom" constant="15" id="nLf-gb-iPt"/>
+                <constraint firstAttribute="trailing" secondItem="UVH-ad-Pvk" secondAttribute="trailing" constant="30" id="sUD-Wn-PEf"/>
+                <constraint firstItem="He1-tz-qR3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="tTL-7c-1lx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ZjOKBtn" destination="y49-YK-bPq" id="y9n-ws-FGw"/>
+                <outlet property="timeLabel" destination="8Sh-20-hlS" id="QsA-2C-bPs"/>
+                <outlet property="timeSlider" destination="UVH-ad-Pvk" id="fMg-If-4Um"/>
+            </connections>
+            <point key="canvasLocation" x="319" y="251.5"/>
+        </view>
+    </objects>
+</document>
